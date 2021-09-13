@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "rack_attack_admin/version"
@@ -28,7 +27,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 2.7'
-  spec.add_dependency 'activesupport-duration-human_string', '>= 0.1.1'
+  #removing this dependency due to limited rails version support
+  #spec.add_dependency 'activesupport-duration-human_string'
   spec.add_dependency 'haml'
   spec.add_dependency 'memoist'
   spec.add_dependency 'rack-attack'

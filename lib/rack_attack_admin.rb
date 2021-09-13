@@ -1,6 +1,7 @@
 require 'rails'
 require 'rack/attack'
-require 'active_support/duration/human_string'
+#removing this dependency due to limited rails version support
+#require 'active_support/duration/human_string'
 
 # TODO: Figure out why renaming it to be this (consistent) path causes it to not load
 # config/routes.rb and to not add routes even if we force it to be loaded.
