@@ -1,7 +1,6 @@
 require 'memoist'
 require 'active_model'
 
-      Rack::Attack
 class Rack::Attack
   class << self
     extend Memoist
@@ -387,7 +386,8 @@ class Rack::Attack
           headers.define_singleton_method :[] do |k|
             super(k.split(/[-_]/).map(&:capitalize).join('-'))
           end
-        end
+      end
     end
+
   end
 end

@@ -27,13 +27,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.3.0'
-  spec.add_dependency 'activesupport', ['>= 4.2', '< 5.3']
+  spec.required_ruby_version = '>= 2.7'
   spec.add_dependency 'activesupport-duration-human_string', '>= 0.1.1'
   spec.add_dependency 'haml'
   spec.add_dependency 'memoist'
   spec.add_dependency 'rack-attack'
-  spec.add_dependency 'rails',         ['>= 4.2', '< 5.3']
+  spec.add_dependency 'rails'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 10.0'
